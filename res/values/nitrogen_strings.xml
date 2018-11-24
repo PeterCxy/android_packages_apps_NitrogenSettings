@@ -140,6 +140,7 @@
     <string name="navbar_tuner_title">Navbar buttons</string>
 
     <string name="navbar_visibility">Allow navigation bar</string>
+    <string name="navbar_dynamic">Dynamic navigation bar tinting</string>
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">Clear all button</string>

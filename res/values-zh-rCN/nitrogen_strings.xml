@@ -140,6 +140,7 @@
     <string name="navbar_tuner_title">导航栏</string>
 
     <string name="navbar_visibility">启用导航栏</string>
+    <string name="navbar_dynamic">动态导航栏变色</string>
 
     <!-- Recents panel settings -->
     <string name="show_clear_all_recents_button_title">清除所有按钮</string>
