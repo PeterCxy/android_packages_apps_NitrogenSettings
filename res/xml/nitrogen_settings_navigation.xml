@@ -22,10 +22,6 @@
         android:key="navbar_visibility"
         android:title="@string/navbar_visibility" />
 
-    <SwitchPreference
-        android:key="navbar_dynamic"
-        android:title="@string/navbar_dynamic" />
-
     <Preference
             android:title="@string/navbar_tuner_title" >
             <intent android:action="android.intent.action.MAIN"

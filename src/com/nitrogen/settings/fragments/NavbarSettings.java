@@ -49,10 +49,8 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
                                     OnPreferenceChangeListener, Indexable {
 
     private static final String NAVBAR_VISIBILITY = "navbar_visibility";
-    private static final String NAVBAR_DYNAMIC = "navbar_dynamic";
 
     private SwitchPreference mNavbarVisibility;
-    private SwitchPreference mNavbarDynamic;
 
     private boolean mIsNavSwitchingMode = false;
     private Handler mHandler;
@@ -63,19 +61,12 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.nitrogen_settings_navigation);
 
         mNavbarVisibility = (SwitchPreference) findPreference(NAVBAR_VISIBILITY);
-        mNavbarDynamic = (SwitchPreference) findPreference(NAVBAR_DYNAMIC);
 
         boolean showing = Settings.Secure.getInt(getContentResolver(),
                 Settings.Secure.NAVIGATION_BAR_VISIBLE,
                 ActionUtils.hasNavbarByDefault(getActivity()) ? 1 : 0) != 0;
         updateBarVisibleAndUpdatePrefs(showing);
         mNavbarVisibility.setOnPreferenceChangeListener(this);
-
-        boolean dynamic = Settings.System.getInt(getContentResolver(),
-                Settings.System.DYNAMIC_NAVIGATION_BAR_TINTING,
-                0) != 0;
-        mNavbarDynamic.setChecked(dynamic);
-        mNavbarDynamic.setOnPreferenceChangeListener(this);
 
         mHandler = new Handler();
     }
@@ -103,12 +94,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
                     mIsNavSwitchingMode = false;
                 }
             }, 1500);
-            return true;
-        } else if (preference.equals(mNavbarDynamic)) {
-            boolean dynamic = ((Boolean) newValue);
-            Settings.System.putInt(getContentResolver(), Settings.System.DYNAMIC_NAVIGATION_BAR_TINTING,
-                     dynamic ? 1 : 0);
-            mNavbarDynamic.setChecked(dynamic);
             return true;
         }
         return false;
