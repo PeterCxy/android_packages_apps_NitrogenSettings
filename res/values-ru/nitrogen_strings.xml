@@ -256,12 +256,20 @@
     <!-- Quick Settings brightness slider -->
     <string name="qs_show_brightness_title">Регулятор яркости</string>
     <string name="qs_show_brightness_summary">Показать регулятор яркости в панели быстрых настроек</string>
+    <string name="qs_brightness_position_bottom_title">Регулятор яркости внизу</string>
+    <string name="qs_brightness_position_bottom_summary">Показать регулятор яркости внизу панели быстрых настроек</string>
 
     <!-- Navigation gestures -->
     <string name="gesture_settings_title">Навигация жестами</string>
     <string name="gesture_settings_summary">Использовать свайпы нижней части экрана для навигации</string>
     <string name="use_bottom_gesture_title">Использовать жесты</string>
     <string name="gesture_settings_info">Панель навигации должна быть отключена!\n\nДоступные жесты:\n\nНазад\n- Свайп вверх слева или справа\n\nДомой\n- Свайп вверх по центру экрана\n\nНедавние приложения\n- Свайп вверх по центру экрана и удержание\n\nПоследнее приложение\n- Короткий свайп вверх и удержание.</string>
+    <string name="gesture_swipe_length_title">Высота срабатывания свайпа</string>
+    <string name="gesture_swipe_length_summary">Необходимая высота снизу для срабатывания свайпа</string>
+    <string name="gesture_action_timeout_title">Время срабатывания свайпа</string>
+    <string name="gesture_action_timeout_summary">Необхожимое время для срабатывания свайпа</string>
+    <string name="unit_msec">мс</string>
+    <string name="unit_px">пикс.</string>
 
     <!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">Предупреждение в нижней части</string>
@@ -332,4 +340,12 @@
     <string name="weather_unit">Единица измерения температуры</string>
     <string name="weather_unit_metric">Градусы Цельсия</string>
     <string name="weather_unit_imperial">Градусы Фаренгейта</string>
+
+    <!-- Quick Settings brightness icon -->
+    <string name="brightness_icon_title">Кнопка адаптивной яркости</string>
+    <string name="brightness_icon_summary">Отображать кнопку включения адаптивной яркости справа от регулятора</string>
+
+    <!-- Quick Settings brightness side buttons -->
+    <string name="brightness_side_buttons_title">Кнопки управления яркостью</string>
+    <string name="brightness_side_buttons_summary">Отображать кнопки управления яркостью по бокам регулятора</string>
 </resources>
